@@ -377,7 +377,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-        InlineKeyboardButton(text="🛡️", callback_data="mukesh_"),
+        InlineKeyboardButton(text="ʙᴏᴛ ɪɴғᴏ", callback_data="mukesh_"),
                     ],
                     [
                         InlineKeyboardButton(
@@ -389,7 +389,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="👨‍💻ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
+                            text="👨‍💻god", url=f"tg://user?id={OWNER_ID}"
                         ),
                     ],
                     [
@@ -418,7 +418,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
+                            text="🥀 ɢᴏᴅ", url=f"tg://user?id={OWNER_ID}"
                         ),
                     ],
                     [
