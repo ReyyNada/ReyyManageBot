@@ -378,7 +378,6 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                 [
                     [
         InlineKeyboardButton(text="🛡️", callback_data="mukesh_"),
-        InlineKeyboardButton(text="🧑‍💻", url=f"tg://user?id={OWNER_ID}"),
                     ],
                     [
                         InlineKeyboardButton(
@@ -452,9 +451,6 @@ def MukeshRobot_Main_Callback(update: Update, context: CallbackContext):
                     ],
                     [
                         InlineKeyboardButton(text="💁 ʙᴀsɪᴄ ", callback_data="basic_help"),
-                        InlineKeyboardButton(text="ᴇxᴘᴇʀᴛ 👮", callback_data="expert_help")
-                    ],
-                    [
                         InlineKeyboardButton(text="🍹 ᴀᴅᴠᴀɴᴄᴇ", callback_data="advance_help"),
                     ],
                     [InlineKeyboardButton(text="• Hᴏᴍᴇ •", callback_data="mukesh_back")]
