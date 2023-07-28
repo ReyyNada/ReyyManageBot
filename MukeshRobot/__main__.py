@@ -382,7 +382,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="🚩sᴜᴩᴩᴏʀᴛ", url=f"url=f"https://t.me/mahadappa"
+                            text="🚩sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/mahadappa"
                         ),
                         InlineKeyboardButton(
                             text="ᴄᴏᴍᴍᴀɴᴅs 💁", callback_data="Main_help"
