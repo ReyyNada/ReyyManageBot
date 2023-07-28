@@ -87,9 +87,8 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="🛡️", callback_data="mukesh_"),
-        InlineKeyboardButton(text="🧑‍💻", url=f"tg://user?id={OWNER_ID}"),
-     ],
+        InlineKeyboardButton(text="ʙᴏᴛ ɪɴғᴏ", callback_data="mukesh_"),
+    ],
     [
         InlineKeyboardButton(
             text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
@@ -375,10 +374,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-        InlineKeyboardButton(text="ʙᴏᴛ ɪɴғᴏ", callback_data="mukesh_"),
-                    ],
+                 [
                     [
                         InlineKeyboardButton(
                             text="🚩sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/mahadappa"
