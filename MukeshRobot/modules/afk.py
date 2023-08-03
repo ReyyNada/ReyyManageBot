@@ -138,10 +138,10 @@ def check_afk(update, context, user_id, fst_name, userc_id):
 
 __help__ = """
  
-*ᴀᴡᴀʏ ғʀᴏᴍ ɢʀᴏᴜᴘ*
- ❍ /afk <reason>*:* ᴍᴀʀᴋ ʏᴏᴜʀsᴇʟғ ᴀs ᴀғᴋ(ᴀᴡᴀʏ ғʀᴏᴍ ᴋᴇʏʙᴏᴀʀᴅ).
- ❍ /brb <ʀᴇᴀsᴏɴ>*:* sᴀᴍᴇ ᴀs ᴛʜᴇ ᴀғᴋ ᴄᴏᴍᴍᴀɴᴅ 
-ᴡʜᴇɴ ᴍᴀʀᴋᴇᴅ ᴀs ᴀғᴋ, ᴀɴʏ ᴍᴇɴᴛɪᴏɴs ᴡɪʟʟ ʙᴇ ʀᴇᴘʟɪᴇᴅ ᴛᴏ ᴡɪᴛʜ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ sᴀʏ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ!
+*Away from group*
+ ᐉ /afk <reason>*:* mark yourself as AFK(away from keyboard).
+ ᐉ brb <reason>*:* same as the afk command - but not a command.
+When marked as AFK, any mentions will be replied to with a message to say you're not available!
 """
 
 AFK_HANDLER = DisableAbleCommandHandler("afk", afk,run_async=True)
