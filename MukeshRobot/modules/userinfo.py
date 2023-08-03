@@ -283,7 +283,6 @@ def info(update: Update, context: CallbackContext):
     elif user.id in WOLVES:
         text += "\n\ntingkat akun ini adalah <b>ᴡᴏʟғ</b>.\n"
         disaster_level_present = True
-        )
 
     try:
         user_member = chat.get_member(user.id)
