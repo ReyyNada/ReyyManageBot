@@ -99,6 +99,34 @@ async def active_afk(_, message: Message):
     await add_afk(user_id, details)
     
     await message.reply_text(f"{message.from_user.first_name} ɪs ɴᴏᴡ ᴀғᴋ!")
+    
+def no_longer_afk(update: Update, context: CallbackContext):
+    user = update.effective_user
+    message = update.effective_message
+
+    if not user:  # ignore channels
+        return
+
+    res = sql.rm_afk(user.id)
+    if res:
+        if message.new_chat_members:  # dont say msg
+            return
+        firstname = update.effective_user.first_name
+        try:
+            options = [
+                "{} di sini!",
+                "{} kembali!",
+                "{} sekarang ada di obrolan!",
+                "{} sudah bangun!",
+                "{} kembali online!",
+                "{} akhirnya di sini!",
+                "Selamat Datang kembali! {}",
+                "Di mana {}?\nDalam obrolan!",
+            ]
+            chosen_option = random.choice(options)
+            update.effective_message.reply_text(chosen_option.format(firstname))
+        except:
+            return
 
 __help__ = """
 
