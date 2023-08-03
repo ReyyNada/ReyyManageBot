@@ -59,15 +59,12 @@ def no_longer_afk(update: Update, context: CallbackContext):
         firstname = update.effective_user.first_name
         try:
             options = [
-                "{} ɪs ʜᴇʀᴇ!",
-                "{} ɪs ʙᴀᴄᴋ!",
-                "{} ɪs ɴᴏᴡ ɪɴ ᴛʜᴇ ᴄʜᴀᴛ!",
-                "{} ɪs ᴀᴡᴀᴋᴇ!",
-                "{} ɪs ʙᴀᴄᴋ ᴏɴʟɪɴᴇ!",
-                "{} ɪs ғɪɴᴀʟʟʏ ʜᴇʀᴇ!",
-                "Wᴇʟᴄᴏᴍᴇ ʙᴀᴄᴋ! {}",
-                "Wʜᴇʀᴇ ɪs {}?\nɪɴ ᴛʜᴇ ᴄʜᴀᴛ?",
-            ]
+                "{} di sini!",
+                "{} kembali!",
+                "{} sudah bangun!",
+                "{} kembali online!",
+                "{} akhirnya di sini!",
+                "Selamat Datang kembali! {}",
             chosen_option = random.choice(options)
             update.effective_message.reply_text(chosen_option.format(firstname))
         except:
