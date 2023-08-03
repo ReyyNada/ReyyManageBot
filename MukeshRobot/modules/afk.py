@@ -39,7 +39,7 @@ def afk(update: Update, context: CallbackContext):
     fname = update.effective_user.first_name
     try:
         update.effective_message.reply_text(
-            "{} ɪs ɴᴏᴡ ᴀᴡᴀʏ  {}".format(fname, notice)
+            "{} telah pergi! {}".format(fname, notice)
         )
     except BadRequest:
         pass
